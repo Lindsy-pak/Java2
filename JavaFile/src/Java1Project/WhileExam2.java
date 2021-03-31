@@ -1,6 +1,6 @@
 package Java1Project;
 
-public class whileExam2 {
+public class WhileExam2 {
 
 	public static void main(String[] args) {
 		
