@@ -19,10 +19,9 @@ public class VendingMachineMission3 {
 		String[] menuNmArr = { "콜라", "사이다", "환타" };
 		int[] menuPriceArr = { 1000, 2000, 3000 };
 //		System.out.print("돈을 주입 :");
-//		
-//		int balance = 0;
 //		int putMoney = scan.nextInt();
-//		balance += putMoney;
+//		int balance = 0;
+//		balance += putMoney; /* -> balance = balance + putMoney; */
 //		
 //		System.out.printf("<메뉴>\n");
 //		for (int i = 0; i < menuPriceArr.length; i++) {
@@ -49,7 +48,7 @@ public class VendingMachineMission3 {
 //		}
 //		System.out.println("\n종료!");
 //		scan.close();
-		
+//		
 		System.out.println("----------------------------------------");
 		System.out.print("돈을 주입 :");
 		int balance = scan.nextInt();
@@ -79,33 +78,33 @@ public class VendingMachineMission3 {
 		scan.close();
 		
 		System.out.println("----------------------------------------");
-		System.out.print("돈을 주입 :");
-		int insertMoney = scan.nextInt();
-		System.out.println("<메뉴>");
-		System.out.println("0.종료");
-		for(int i=0; i<menuPriceArr.length; i++) {
-			System.out.printf("%d. %s (%,d원)\n", (i + 1), menuNmArr[i], menuPriceArr[i]);
-		}
-		boolean run = true;
-		while(run) {
-			System.out.print("선택 >");
-			int choice = scan.nextInt();
-			if(choice < 0 || choice > menuNmArr.length) {
-				System.out.println("잘 못 선택하셨습니다.");
-				continue;
-			}
-			int selectedIdx = choice -1;
-			if(choice == 0) {
-				run = false;
-				System.out.println("종료");
-			} else if(insertMoney < menuPriceArr[selectedIdx]) {
-				System.out.println("금액이 부족합니다.");
-			} else {
-				System.out.printf("%s를 선택했습니다.\n",menuNmArr[selectedIdx]);
-			}
-			System.out.printf("(남은 금액 : %,d원)\n", insertMoney);
-		}
-		scan.close();
+//		System.out.print("돈을 주입 :");
+//		int insertMoney = scan.nextInt();
+//		System.out.println("<메뉴>");
+//		System.out.println("0.종료");
+//		for(int i=0; i<menuPriceArr.length; i++) {
+//			System.out.printf("%d. %s (%,d원)\n", (i + 1), menuNmArr[i], menuPriceArr[i]);
+//		}
+//		boolean run = true;
+//		while(run) {
+//			System.out.print("선택 >");
+//			int choice = scan.nextInt();
+//			if(choice < 0 || choice > menuNmArr.length) {
+//				System.out.println("잘 못 선택하셨습니다.");
+//				continue;
+//			}
+//			int selectedIdx = choice -1;
+//			if(choice == 0) {
+//				run = false;
+//				System.out.println("종료");
+//			} else if(insertMoney < menuPriceArr[selectedIdx]) {
+//				System.out.println("금액이 부족합니다.");
+//			} else {
+//				System.out.printf("%s를 선택했습니다.\n",menuNmArr[selectedIdx]);
+//			}
+//			System.out.printf("(남은 금액 : %,d원)\n", insertMoney);
+//		}
+//		scan.close();
 		
 		
 		

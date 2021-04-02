@@ -40,6 +40,20 @@ public class BubbleSortMission {
 			}
 			System.out.println(Arrays.toString(arr));
 		}
+		System.out.println("--------------------------------------------");
+		
+		for(int i=arr.length-1; i>0; i--) {
+			System.out.println();
+			for(int j=0; j<i; j++) {
+				if(arr[j] > arr[j+1]) {
+					int temp = arr[j+1];
+					arr[j+1] = arr[j];
+					arr[j] = temp;
+					System.out.println(Arrays.toString(arr)); //중간 과정을 보기 위함 
+				}
+			}
+			System.out.println(Arrays.toString(arr));
+		}
 		
 
 		
