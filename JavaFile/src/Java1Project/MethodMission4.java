@@ -6,7 +6,7 @@ public class MethodMission4 {
 		int rNum = getRandomNum(/* 여기가 비어있으면 메소드()에도 비워준다.*/); //0~9
 		System.out.println("rNum : " + rNum);
 		
-		/* 오버로딩 : 똑같은 이름의 메서드를 만들 수 있다. */
+		/* 오버로딩 : 똑같은 이름의 메서드를 만듬. */
 		 
 		int a = 20;
 		rNum = getRandomNum(a); // 0~19
@@ -34,7 +34,7 @@ public class MethodMission4 {
 	public static int getRandomNum(int min, int max) {
 		return (int)(Math.random()*(max-min)+1 + min);
 //		return (int)(Math.random()*(max+min)-1 + min);
-		/* 랜덤값 구하는 공식 2가지 : 최댓값 + 최솟값 -1 // 최솟값 - 최댓값 +1 */
+		/* 랜덤값 구하는 공식 2가지 : 최댓값 + 최솟값 -1 // 최댓값 - 최솟값 +1 */
 	}
 	
 	
