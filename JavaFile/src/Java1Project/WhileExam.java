@@ -21,7 +21,10 @@ public class WhileExam {
 			i++;
 		} // 몇번 반복하는지 횟 수를 알 수 없을 때 
 
-		
+//		boolean run = true;
+//		while(run)) { /* while문에는 true / False 밖에 오지 못한다. boolean타입*/
+//		}
+//		System.out.println("끝");
 		
 		
 		
